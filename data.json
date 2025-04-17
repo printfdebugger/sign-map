@@ -1,0 +1,19 @@
+{
+  "pins": [
+    {
+      "streetName": "Fő utca",
+      "coordinates": [47.4989, 18.7405],
+      "images": [
+        "https://drive.google.com/uc?export=view&id=YOUR_IMAGE_ID_1",
+        "https://drive.google.com/uc?export=view&id=YOUR_IMAGE_ID_2"
+      ]
+    },
+    {
+      "streetName": "Kossuth Lajos utca",
+      "coordinates": [47.4995, 18.7412],
+      "images": [
+        "https://drive.google.com/uc?export=view&id=YOUR_IMAGE_ID_3"
+      ]
+    }
+  ]
+}
