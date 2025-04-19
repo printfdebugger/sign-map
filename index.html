@@ -39,6 +39,7 @@
             border-radius: 4px;
             border: 1px solid #ddd;
             transition: transform 0.2s;
+            cursor: pointer;
         }
         .popup-image:hover {
             transform: scale(1.03);
@@ -54,11 +55,41 @@
             border-radius: 5px;
             z-index: 1000;
         }
+        .image-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 1001;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            max-width: 90%;
+            max-height: 90%;
+        }
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <div id="map"></div>
     <div class="loading" id="loading">Loading map data...</div>
+    
+    <!-- Image modal for larger view -->
+    <div class="image-modal" id="imageModal" onclick="closeModal()">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
 
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -81,7 +112,20 @@
             popupAnchor: [1, -34]
         });
 
-        // Load JSON data (hosted on Netlify alongside your index.html)
+        // Function to open image modal
+        function openModal(imgSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modal.style.display = 'flex';
+            modalImg.src = imgSrc;
+        }
+
+        // Function to close image modal
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+
+        // Load JSON data
         fetch('data.json')
             .then(response => {
                 if (!response.ok) throw new Error('Failed to load data');
@@ -109,7 +153,8 @@
                                 <img src="${imgUrl}" 
                                      class="popup-image" 
                                      alt="${pin.streetName} sign ${index + 1}"
-                                     loading="lazy">
+                                     loading="lazy"
+                                     onclick="openModal('${imgUrl}')">
                             `;
                         });
                         popupContent += `</div>`;

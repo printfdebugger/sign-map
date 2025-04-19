@@ -1,18 +1,623 @@
 {
   "pins": [
     {
-      "streetName": "Fő utca",
-      "coordinates": [47.4989, 18.7405],
+      "streetName": "Liliom lejt\u0151",
+      "coordinates": [
+        47.496981,
+        18.742444
+      ],
       "images": [
-        "https://drive.usercontent.google.com/download?id=1X4OyX4gt-fzClxxrpn8qZIgXRUy9h3aF&export=view",
-        "https://drive.usercontent.google.com/download?id=1X4OyX4gt-fzClxxrpn8qZIgXRUy9h3aF&export=view"
+        "/images/0.jpeg"
+      ]
+    },
+    {
+      "streetName": "Tulip\u00e1n k\u00f6z / Pillang\u00f3 k\u00f6z",
+      "coordinates": [
+        47.495988,
+        18.741768
+      ],
+      "images": [
+        "/images/1.jpeg"
+      ]
+    },
+    {
+      "streetName": "R\u00e9t k\u00f6z",
+      "coordinates": [
+        47.495223,
+        18.738712
+      ],
+      "images": [
+        "/images/10.jpeg"
+      ]
+    },
+    {
+      "streetName": "Tavasz utca",
+      "coordinates": [
+        47.495509,
+        18.735369
+      ],
+      "images": [
+        "/images/11.jpeg"
+      ]
+    },
+    {
+      "streetName": "Dombh\u00e1t utca",
+      "coordinates": [
+        47.495582,
+        18.733524
+      ],
+      "images": [
+        "/images/12.jpeg"
+      ]
+    },
+    {
+      "streetName": "R\u00f3zsa k\u00f6z",
+      "coordinates": [
+        47.495756,
+        18.732065
+      ],
+      "images": [
+        "/images/13.jpeg"
+      ]
+    },
+    {
+      "streetName": "Musk\u00e1tli k\u00f6z",
+      "coordinates": [
+        47.495962,
+        18.730692
+      ],
+      "images": [
+        "/images/14.jpeg"
+      ]
+    },
+    {
+      "streetName": "Vadvir\u00e1g utca",
+      "coordinates": [
+        47.496731,
+        18.729061
+      ],
+      "images": [
+        "/images/15.jpeg"
+      ]
+    },
+    {
+      "streetName": "\u0150zike k\u00f6z",
+      "coordinates": [
+        47.49701,
+        18.730611
+      ],
+      "images": [
+        "/images/17.jpeg"
+      ]
+    },
+    {
+      "streetName": "Dombh\u00e1t utca",
+      "coordinates": [
+        47.496792,
+        18.732934
+      ],
+      "images": [
+        "/images/18.jpeg"
+      ]
+    },
+    {
+      "streetName": "Bor\u00f3ka utca",
+      "coordinates": [
+        47.497448,
+        18.734806
+      ],
+      "images": [
+        "/images/19.jpeg"
+      ]
+    },
+    {
+      "streetName": "Liliom lejt\u0151",
+      "coordinates": [
+        47.495487,
+        18.741286
+      ],
+      "images": [
+        "/images/2.jpeg"
+      ]
+    },
+    {
+      "streetName": "Vadvir\u00e1g utca",
+      "coordinates": [
+        47.498101,
+        18.735643
+      ],
+      "images": [
+        "/images/20.jpeg"
+      ]
+    },
+    {
+      "streetName": "Bokr\u00e9ta k\u00f6z",
+      "coordinates": [
+        47.497452,
+        18.736984
+      ],
+      "images": [
+        "/images/21.jpeg"
+      ]
+    },
+    {
+      "streetName": "Margar\u00e9ta k\u00f6z",
+      "coordinates": [
+        47.498492,
+        18.736437
+      ],
+      "images": [
+        "/images/22.jpeg"
+      ]
+    },
+    {
+      "streetName": "Szirom k\u00f6z",
+      "coordinates": [
+        47.498369,
+        18.737698
+      ],
+      "images": [
+        "/images/23.jpeg"
+      ]
+    },
+    {
+      "streetName": "Menta k\u00f6z",
+      "coordinates": [
+        47.497945,
+        18.738513
+      ],
+      "images": [
+        "/images/26.jpeg"
+      ]
+    },
+    {
+      "streetName": "Thall\u00f3czy utca",
+      "coordinates": [
+        47.500072,
+        18.742563
+      ],
+      "images": [
+        "/images/27.jpeg"
+      ]
+    },
+    {
+      "streetName": "\u00c1rv\u00e1cska utca / Sz\u00e9chenyi utca",
+      "coordinates": [
+        47.499684,
+        18.74266
+      ],
+      "images": [
+        "/images/28.jpeg"
+      ]
+    },
+    {
+      "streetName": "Arany J\u00e1nos utca",
+      "coordinates": [
+        47.498789,
+        18.742955
+      ],
+      "images": [
+        "/images/29.jpeg"
+      ]
+    },
+    {
+      "streetName": "Bor\u00f3ka utca",
+      "coordinates": [
+        47.495419,
+        18.741195
+      ],
+      "images": [
+        "/images/3.jpeg"
+      ]
+    },
+    {
+      "streetName": "De\u00e1k Ferenc utca / B\u00fazavir\u00e1g utca",
+      "coordinates": [
+        47.497894,
+        18.743196
+      ],
+      "images": [
+        "/images/30.jpeg"
+      ]
+    },
+    {
+      "streetName": "Kossuth Lajos utca / Pipacs utca",
+      "coordinates": [
+        47.496934,
+        18.743491
+      ],
+      "images": [
+        "/images/31.jpeg"
+      ]
+    },
+    {
+      "streetName": "\u00c1rval\u00e1nyhaj utca",
+      "coordinates": [
+        47.495245,
+        18.744108
+      ],
+      "images": [
+        "/images/32.jpeg"
+      ]
+    },
+    {
+      "streetName": "J\u00f3kai M\u00f3r utca",
+      "coordinates": [
+        47.497118,
+        18.745224
+      ],
+      "images": [
+        "/images/33.jpeg"
+      ]
+    },
+    {
+      "streetName": "J\u00f3kai M\u00f3r utca",
+      "coordinates": [
+        47.495074,
+        18.745449
+      ],
+      "images": [
+        "/images/34.jpeg"
+      ]
+    },
+    {
+      "streetName": "Bocskai Istv\u00e1n utca",
+      "coordinates": [
+        47.495168,
+        18.746629
+      ],
+      "images": [
+        "/images/36.jpeg"
+      ]
+    },
+    {
+      "streetName": "F\u00fczes utca",
+      "coordinates": [
+        47.495129,
+        18.748003
+      ],
+      "images": [
+        "/images/37.jpeg"
+      ]
+    },
+    {
+      "streetName": "F\u00fczes utca",
+      "coordinates": [
+        47.496941,
+        18.748233
+      ],
+      "images": [
+        "/images/38.jpeg"
       ]
     },
     {
       "streetName": "Kossuth Lajos utca",
-      "coordinates": [47.4995, 18.7412],
+      "coordinates": [
+        47.497224,
+        18.748244
+      ],
       "images": [
-        "https://drive.usercontent.google.com/download?id=1X4OyX4gt-fzClxxrpn8qZIgXRUy9h3aF&export=view"
+        "/images/39.jpeg"
+      ]
+    },
+    {
+      "streetName": "Barka k\u00f6z",
+      "coordinates": [
+        47.496006,
+        18.74002
+      ],
+      "images": [
+        "/images/4.jpeg"
+      ]
+    },
+    {
+      "streetName": "Pet\u0151fi utca",
+      "coordinates": [
+        47.497738,
+        18.748276
+      ],
+      "images": [
+        "/images/40.jpeg"
+      ]
+    },
+    {
+      "streetName": "Patak \u00fat",
+      "coordinates": [
+        47.497778,
+        18.748153
+      ],
+      "images": [
+        "/images/41.jpeg"
+      ]
+    },
+    {
+      "streetName": "De\u00e1k Ferenc utca",
+      "coordinates": [
+        47.498256,
+        18.748164
+      ],
+      "images": [
+        "/images/42.jpeg"
+      ]
+    },
+    {
+      "streetName": "Arany J\u00e1nos utca",
+      "coordinates": [
+        47.499076,
+        18.747665
+      ],
+      "images": [
+        "/images/43.jpeg"
+      ]
+    },
+    {
+      "streetName": "Sz\u00e9chenyi utca",
+      "coordinates": [
+        47.499862,
+        18.746785
+      ],
+      "images": [
+        "/images/44.jpeg"
+      ]
+    },
+    {
+      "streetName": "Thall\u00f3czy utca",
+      "coordinates": [
+        47.500844,
+        18.745975
+      ],
+      "images": [
+        "/images/45.jpeg"
+      ]
+    },
+    {
+      "streetName": "Kiserd\u0151 \u00fat",
+      "coordinates": [
+        47.501884,
+        18.747665
+      ],
+      "images": [
+        "/images/47.jpeg"
+      ]
+    },
+    {
+      "streetName": "Kiserd\u0151 \u00fat",
+      "coordinates": [
+        47.497894,
+        18.749408
+      ],
+      "images": [
+        "/images/49.jpeg"
+      ]
+    },
+    {
+      "streetName": "Ak\u00e1c sor",
+      "coordinates": [
+        47.497905,
+        18.74965
+      ],
+      "images": [
+        "/images/50.jpeg"
+      ]
+    },
+    {
+      "streetName": "Kiss J\u00e1nos alt\u00e1bornagy utca",
+      "coordinates": [
+        47.497956,
+        18.750417
+      ],
+      "images": [
+        "/images/51.jpeg"
+      ]
+    },
+    {
+      "streetName": "Bem J\u00f3zsef utca",
+      "coordinates": [
+        47.498024,
+        18.751404
+      ],
+      "images": [
+        "/images/52.jpeg"
+      ]
+    },
+    {
+      "streetName": "Ak\u00e1cos \u00fat",
+      "coordinates": [
+        47.49813,
+        18.75312
+      ],
+      "images": [
+        "/images/53.jpeg"
+      ]
+    },
+    {
+      "streetName": "Liget utca",
+      "coordinates": [
+        47.49942,
+        18.752643
+      ],
+      "images": [
+        "/images/54.jpeg"
+      ]
+    },
+    {
+      "streetName": "\u0150szir\u00f3zsa \u00fat",
+      "coordinates": [
+        47.501594,
+        18.75201
+      ],
+      "images": [
+        "/images/55.jpeg"
+      ]
+    },
+    {
+      "streetName": "Geszteny\u00e9s \u00fat",
+      "coordinates": [
+        47.502859,
+        18.751736
+      ],
+      "images": [
+        "/images/56.jpeg"
+      ]
+    },
+    {
+      "streetName": "S\u00e1ndor udvar",
+      "coordinates": [
+        47.503145,
+        18.753303
+      ],
+      "images": [
+        "/images/58.jpeg"
+      ]
+    },
+    {
+      "streetName": "Zs\u00e1mb\u00e9ki \u00fat",
+      "coordinates": [
+        47.503156,
+        18.753394
+      ],
+      "images": [
+        "/images/59.jpeg"
+      ]
+    },
+    {
+      "streetName": "\u00c1rval\u00e1nyhaj utca",
+      "coordinates": [
+        47.496676,
+        18.738465
+      ],
+      "images": [
+        "/images/6.jpeg"
+      ]
+    },
+    {
+      "streetName": "Koz\u00e1romi \u00fat",
+      "coordinates": [
+        47.503359,
+        18.7543
+      ],
+      "images": [
+        "/images/60.jpeg"
+      ]
+    },
+    {
+      "streetName": "Liget utca",
+      "coordinates": [
+        47.501359,
+        18.754252
+      ],
+      "images": [
+        "/images/64.jpeg"
+      ]
+    },
+    {
+      "streetName": "M\u00f3riczi \u00fat",
+      "coordinates": [
+        47.500659,
+        18.742429
+      ],
+      "images": [
+        "/images/65.jpeg"
+      ]
+    },
+    {
+      "streetName": "\u00d6rd\u00f6glovas lejt\u0151",
+      "coordinates": [
+        47.500551,
+        18.742273
+      ],
+      "images": [
+        "/images/66.jpeg"
+      ]
+    },
+    {
+      "streetName": "Ny\u00edr k\u00f6z",
+      "coordinates": [
+        47.499235,
+        18.740986
+      ],
+      "images": [
+        "/images/67.jpeg"
+      ]
+    },
+    {
+      "streetName": "B\u00fazavir\u00e1g utca",
+      "coordinates": [
+        47.498445,
+        18.740326
+      ],
+      "images": [
+        "/images/68.jpeg"
+      ]
+    },
+    {
+      "streetName": "H\u00e1rs k\u00f6z",
+      "coordinates": [
+        47.498006,
+        18.741721
+      ],
+      "images": [
+        "/images/69.jpeg"
+      ]
+    },
+    {
+      "streetName": "S\u00e1ndor M\u00f3ric t\u00e9r",
+      "coordinates": [
+        47.496216,
+        18.737853
+      ],
+      "images": [
+        "/images/7.jpeg"
+      ]
+    },
+    {
+      "streetName": "Rig\u00f3 k\u00f6z",
+      "coordinates": [
+        47.499047,
+        18.739135
+      ],
+      "images": [
+        "/images/70.jpeg"
+      ]
+    },
+    {
+      "streetName": "Pipacs utca",
+      "coordinates": [
+        47.497539,
+        18.739355
+      ],
+      "images": [
+        "/images/71.jpeg"
+      ]
+    },
+    {
+      "streetName": "J\u00e1zmin k\u00f6z",
+      "coordinates": [
+        47.497155,
+        18.740504
+      ],
+      "images": [
+        "/images/72.jpeg"
+      ]
+    },
+    {
+      "streetName": "Orgona k\u00f6z",
+      "coordinates": [
+        47.496999,
+        18.742157
+      ],
+      "images": [
+        "/images/73.jpeg"
+      ]
+    },
+    {
+      "streetName": "Bor\u00f3ka utca",
+      "coordinates": [
+        47.49568,
+        18.736708
+      ],
+      "images": [
+        "/images/8.jpeg"
       ]
     }
   ]

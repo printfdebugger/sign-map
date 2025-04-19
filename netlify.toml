@@ -1,0 +1,9 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+# Redirect /images/filename.jpeg to the serverless function
+[[redirects]]
+  from = "/images/*"
+  to = "/.netlify/functions/get-image"
+  status = 200 

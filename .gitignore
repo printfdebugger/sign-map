@@ -1,0 +1,6 @@
+# Ignore images folder
+images/
+.env
+*.py
+requirements.txt
+templates/
