@@ -11,4 +11,12 @@
 [[redirects]]
   from = "/images/*"
   to = "/.netlify/functions/get-image"
-  status = 200 
+  status = 200
+  force = true
+
+# Additional rule for direct function access
+[[redirects]]
+  from = "/.netlify/functions/get-image/*"
+  to = "/.netlify/functions/get-image"
+  status = 200
+  force = true 
