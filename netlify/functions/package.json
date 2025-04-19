@@ -1,9 +1,0 @@
-{
-  "name": "sign-map-functions",
-  "version": "1.0.0",
-  "description": "Netlify functions for street sign map",
-  "main": "get-image.js",
-  "dependencies": {
-    "@netlify/blobs": "^5.2.0"
-  }
-} 

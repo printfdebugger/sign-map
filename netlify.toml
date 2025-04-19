@@ -2,6 +2,10 @@
   publish = "."
   functions = "netlify/functions"
 
+# Add the plugin to install function dependencies
+[[plugins]]
+  package = "@netlify/plugin-functions-install-core"
+
 # Redirect /images/filename.jpeg to the serverless function
 [[redirects]]
   from = "/images/*"

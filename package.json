@@ -1,0 +1,13 @@
+{
+  "name": "sign-map",
+  "version": "1.0.0",
+  "description": "Street sign map with Netlify functions",
+  "main": "index.html",
+  "dependencies": {
+    "@netlify/blobs": "^5.2.0",
+    "dotenv": "^16.3.1"
+  },
+  "scripts": {
+    "start": "netlify dev"
+  }
+} 

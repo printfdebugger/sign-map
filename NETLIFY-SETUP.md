@@ -4,22 +4,21 @@ This project uses Netlify Blobs for image storage and Netlify Functions for serv
 
 ## Setup Instructions
 
-1. Deploy this project to Netlify:
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Deploy this project to Netlify:
 
 ```bash
 netlify deploy --prod
 ```
 
-2. Set up environment variables in Netlify:
+3. Set up environment variables in Netlify:
    - `NETLIFY_SITE_ID` - Your Netlify site ID
    - `NETLIFY_BLOBS_TOKEN` - A token with access to Blobs
-
-3. Install dependencies for the serverless function:
-
-```bash
-cd netlify/functions
-npm install
-```
 
 ## How it Works
 
@@ -28,6 +27,8 @@ npm install
 - All requests to `/images/filename.jpeg` are routed to the function
 - The function handles caching (1-year cache) for optimal performance
 - The data.json file references images using the path format: `/images/X.jpeg`
+- Dependencies are installed via the top-level package.json
+- The `@netlify/plugin-functions-install-core` plugin ensures functions have access to dependencies
 
 ## Uploading Images
 
@@ -42,7 +43,7 @@ node upload_images.js
 To test locally:
 
 ```bash
-netlify dev
+npm start
 ```
 
 This will serve the site and functions locally, allowing you to test before deployment. 
