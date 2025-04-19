@@ -7,9 +7,11 @@ exports.handler = async (event, context) => {
     
     console.log(`Testing retrieval of image: ${imageName}`);
     
-    // Initialize the Blob store
+    // Initialize the Blob store with explicit credentials
     const store = getStore({
-      name: 'images'
+      name: 'images',
+      siteID: process.env.NETLIFY_SITE_ID,
+      token: process.env.NETLIFY_BLOBS_TOKEN
     });
     
     // First list all blobs for diagnostics

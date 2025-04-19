@@ -4,7 +4,9 @@ exports.handler = async (event, context) => {
   try {
     console.log('Creating store connection');
     const store = getStore({
-      name: 'images'
+      name: 'images',
+      siteID: process.env.NETLIFY_SITE_ID,
+      token: process.env.NETLIFY_BLOBS_TOKEN
     });
 
     console.log('Listing blobs in the store');

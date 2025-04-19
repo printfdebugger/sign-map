@@ -38,10 +38,11 @@ exports.handler = async (event, context) => {
       };
     }
 
-    // Initialize the Blob store
+    // Initialize the Blob store with explicit credentials
     const store = getStore({
-      name: 'images'
-      // siteID and token are automatically set by Netlify Functions
+      name: 'images',
+      siteID: process.env.NETLIFY_SITE_ID,
+      token: process.env.NETLIFY_BLOBS_TOKEN
     });
 
     console.log(`Looking for image '${imageName}' in 'images' store`);
