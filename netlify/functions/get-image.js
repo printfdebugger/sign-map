@@ -1,17 +1,5 @@
 const { getStore } = require('@netlify/blobs');
 
-// Function to generate a signed URL for direct CDN access
-async function getSignedImageUrl(imageName) {
-  const store = getStore({
-    name: 'images',
-    siteID: process.env.NETLIFY_SITE_ID,
-    token: process.env.NETLIFY_BLOBS_TOKEN
-  });
-  
-  // Generate a signed URL that's valid for 1 hour (3600 seconds)
-  return store.getSignedUrl(imageName, { expiresIn: 3600 });
-}
-
 exports.handler = async (event, context) => {
   try {
     // Get the image filename from the path parameter
@@ -59,9 +47,10 @@ exports.handler = async (event, context) => {
 
     console.log(`Looking for image '${imageName}' in 'images' store`);
     
-    // Check if the image exists
-    const exists = await store.head(imageName);
-    if (!exists) {
+    // Check if the image exists and get it as ArrayBuffer
+    const imageData = await store.get(imageName, { type: 'arrayBuffer' });
+    
+    if (!imageData) {
       console.log(`Image not found: ${imageName}`);
       return {
         statusCode: 404,
@@ -73,18 +62,25 @@ exports.handler = async (event, context) => {
       };
     }
 
-    // Get a signed URL for direct CDN access
-    const signedUrl = await getSignedImageUrl(imageName);
-    console.log(`Generated signed URL for ${imageName}`);
-    
-    // Redirect to the signed URL
+    console.log(`Found image: ${imageName}, size: ${imageData.byteLength} bytes`);
+
+    // Determine content type based on file extension
+    let contentType = 'image/jpeg'; // Default
+    if (imageName.endsWith('.png')) contentType = 'image/png';
+    if (imageName.endsWith('.gif')) contentType = 'image/gif';
+    if (imageName.endsWith('.webp')) contentType = 'image/webp';
+
+    // Set cache control headers to cache the image for a long time
     return {
-      statusCode: 302,
+      statusCode: 200,
       headers: {
-        'Location': signedUrl,
-        'Cache-Control': 'public, max-age=31536000'
+        'Content-Type': contentType,
+        'Cache-Control': 'public, max-age=31536000', // Cache for 1 year
+        'Netlify-CDN-Cache-Control': 'public, max-age=31536000, stale-while-revalidate=86400', 
+        'Content-Length': imageData.byteLength.toString()
       },
-      body: ''
+      body: Buffer.from(imageData).toString('base64'),
+      isBase64Encoded: true
     };
   } catch (error) {
     console.error('Error fetching image:', error);
