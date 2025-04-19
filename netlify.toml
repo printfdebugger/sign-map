@@ -1,6 +1,7 @@
 [build]
   publish = "."
   functions = "netlify/functions"
+  command = "npm install"
 
 # Add the plugin to install function dependencies
 [[plugins]]

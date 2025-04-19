@@ -25,3 +25,66 @@
 1. Replace placeholder values in `locations.json` and `index.html`.
 2. Host the files (or open `index.html` locally).
 3. Ensure your API key has access to the Maps JavaScript API.
+
+# Herceghalom Street Sign Map
+
+A web application that displays street signs from Herceghalom on an interactive map using Leaflet.js and Netlify serverless functions.
+
+## Features
+
+- Interactive map of Herceghalom with location markers for street signs
+- Pop-up windows with street names and images
+- Responsive design for mobile and desktop
+- Images stored in Netlify Blobs for efficient delivery
+- Serverless function for image serving with caching
+
+## Technology Stack
+
+- HTML, CSS, JavaScript
+- Leaflet.js for mapping
+- Netlify for hosting
+- Netlify Functions for serverless image serving
+- Netlify Blobs for image storage
+
+## Setup
+
+1. Clone this repository
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Set up Netlify environment variables:
+   - `NETLIFY_SITE_ID` - Your Netlify site ID
+   - `NETLIFY_BLOBS_TOKEN` - A token with access to Blobs
+
+## How It Works
+
+- Street sign data is stored in `data.json` with coordinates and image references
+- Images are stored in Netlify Blobs storage in a store called "images"
+- The `/images/filename.jpeg` path is redirected to a serverless function
+- The function retrieves the image from Netlify Blobs and serves it with caching headers
+- The index.html file displays the map and fetches data from data.json
+
+## Development
+
+To run the site locally:
+
+```
+npm start
+```
+
+This will start a local development server using Netlify Dev.
+
+## Image Management
+
+Images can be uploaded to Netlify Blobs using the provided script:
+
+```
+node upload_images.js
+```
+
+The script will upload all images in the `/images` directory to Netlify Blobs.
+
+## Deployment
+
+This site is configured for automatic deployment on Netlify. Just push to your Git repository, and Netlify will handle the rest.

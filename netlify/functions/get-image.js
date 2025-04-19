@@ -14,9 +14,8 @@ exports.handler = async (event, context) => {
 
     // Initialize the Blob store
     const store = getStore({
-      name: 'images',
-      siteID: process.env.NETLIFY_SITE_ID,
-      token: process.env.NETLIFY_BLOBS_TOKEN,
+      name: 'images'
+      // siteID and token are automatically set by Netlify Functions
     });
 
     // Get the image from blob storage
@@ -50,7 +49,7 @@ exports.handler = async (event, context) => {
     console.error('Error fetching image:', error);
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: 'Failed to fetch image' })
+      body: JSON.stringify({ error: 'Failed to fetch image', details: error.message })
     };
   }
 } 
